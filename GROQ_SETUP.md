@@ -62,7 +62,7 @@ load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 response = client.chat.completions.create(
-    model="llama-3.3-70b-versatile",
+    model="openai/gpt-oss-20b",
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
         {"role": "user",   "content": "Hello!"},
@@ -78,14 +78,13 @@ print(response.choices[0].message.content)
 
 | Model ID | Context window | Notes |
 |---|---|---|
-| `llama-3.3-70b-versatile` | 128 k tokens | Best general-purpose option |
-| `llama-3.1-8b-instant` | 128 k tokens | Faster, lower latency |
-| `mixtral-8x7b-32768` | 32 k tokens | Good reasoning |
-| `gemma2-9b-it` | 8 k tokens | Lightweight |
+| `openai/gpt-oss-20b` | Check current documentation | Recommended default for this exercise |
+| `openai/gpt-oss-120b` | Check current documentation | Larger model for more complex reasoning |
+| `qwen/qwen3.6-27b` | Check current documentation | Alternative general-purpose model |
 
 The full and up-to-date list is at [https://console.groq.com/docs/models](https://console.groq.com/docs/models).
 
-> **Tip:** `llama-3.3-70b-versatile` is a solid default for this exercise — it handles tool/function calling well, which is useful for routing between the forum articles knowledge base and the SIM Card Service.
+> **Tip:** `openai/gpt-oss-20b` is the recommended default for this exercise. Model availability and free-tier limits can change, so check the current model list before starting.
 
 ---
 

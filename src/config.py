@@ -14,4 +14,4 @@ def load_settings() -> Settings:
     api_key = os.getenv("GROQ_API_KEY", "").strip()
     if not api_key:
         raise RuntimeError("GROQ_API_KEY não está configurada no ficheiro .env")
-    return Settings(api_key=api_key, model=os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile"))
+    return Settings(api_key=api_key, model=os.getenv("GROQ_MODEL", "openai/gpt-oss-20b"))
