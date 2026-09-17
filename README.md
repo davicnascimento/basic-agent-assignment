@@ -60,7 +60,7 @@ Requer Python 3.10 ou superior.
 
 ```bash
 python -m venv .venv
-.venv\Scripts\Activate.ps1
+.venv\Scripts\Activate
 pip install -r requirements.txt
 copy .env.example .env
 ```
