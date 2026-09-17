@@ -45,13 +45,14 @@ basic-agent-assignment/
 
 ## Tarefas
 
-1. Criar uma feature branch no formato `feature/{nome}-agent-implementation` e abrir um Pull Request para `main`.
+1. Criar uma feature branch no formato `feature/{nome}-agent-implementation`.
 2. Copiar `.env.example` para `.env`.
 3. Criar uma chave gratuita no Groq seguindo `GROQ_SETUP.md` fornecido.
 4. Implementar o `SYSTEM_PROMPT` em `src/prompt.py`.
 5. Implementar a chamada ao modelo em `src/llm.py`.
 6. Ligar a leitura do terminal, chamada do agente e impressão do resultado em `app.py`.
 7. Executar os testes e testar pelo menos cinco mensagens.
+8. Abrir um Pull Request para `main`.
 
 ## Instalação
 
