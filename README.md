@@ -1,7 +1,5 @@
 # Banking Triage Agent
 
-Assignment de um dia para criar um primeiro agente em Python com Groq.
-
 ## Objetivo
 
 Construir um agente que recebe uma mensagem de um cliente bancário, classifica o pedido e devolve uma resposta curta e segura.
@@ -45,15 +43,15 @@ basic-agent-assignment/
     └── test_validation.py
 ```
 
-## Tarefas dos estagiários
+## Tarefas
 
 1. Copiar `.env.example` para `.env`.
-2. Criar uma chave gratuita no Groq seguindo `GROQ_SETUP.md` fornecido pelo formador.
+2. Criar uma chave gratuita no Groq seguindo `GROQ_SETUP.md` fornecido.
 3. Implementar o `SYSTEM_PROMPT` em `src/prompt.py`.
 4. Implementar a chamada ao modelo em `src/llm.py`.
 5. Ligar a leitura do terminal, chamada do agente e impressão do resultado em `app.py`.
 6. Executar os testes e testar pelo menos cinco mensagens.
-7. Criar uma feature branch, por exemplo `feature/agent-implementation`, e abrir um Pull Request para `main`.
+7. Criar uma feature branch no formato `feature/{nome}-agent-implementation` e abrir um Pull Request para `main`.
 
 ## Instalação
 
@@ -89,11 +87,3 @@ python -m pytest
 - Erros da API são apresentados de forma clara.
 - A chave não aparece no código nem em commits.
 - O README explica como executar a solução.
-
-## Avaliação
-
-- Integração com Groq: 25%
-- Classificação e JSON: 25%
-- Regras de segurança e urgência: 20%
-- Configuração segura: 15%
-- Organização, testes e README: 15%
